@@ -1,13 +1,14 @@
 .resume-container {
-  width: 800px;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  width: 1000px;
+  //padding-top: 40px;
+  //padding-bottom: 60px;
+  padding: 40px 0 60px 0;
 
   .resume-header {
     display: inline-block;
     width: 100%;
     height: 135px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     padding: 0 20px 23px;
 
     .personal-info {
@@ -59,10 +60,81 @@
     width: 100%;
     padding: 20px;
 
+    .section-header {
+      font-weight: 600;
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+
     .left-column {
       display: table-cell;
       width: 50%;
       padding-right: 5px;
+
+      .work-experience {
+
+        .work-experience-company {
+          display: inline-block;
+          //padding-bottom: 15px;
+
+          .company-position {
+            display: inline-block;
+            padding: 0;
+
+            .position {
+              font-size: 12px;
+              display: inline-block;
+
+              .position-name {
+                display: inline;
+                font-weight: 600;
+
+              }
+
+              .position-divider {
+                display: inline;
+
+              }
+
+              .position-date {
+                display: inline;
+
+              }
+            }
+          }
+
+          .company-location {
+            display: inline-block;
+            float: right;
+            padding: 0;
+            font-size: 12px;
+            text-align: right;
+          }
+
+          .company-name {
+            padding: 0;
+            font-size: 16px;
+          }
+        }
+
+        .work-accomplishments {
+          padding-top: 15px;
+
+          .work-accomplishments-header {
+            font-size: 12px;
+          }
+
+          .work-accomplishments-summary {
+
+          }
+
+          .work-accomplishments-list {
+            margin-bottom: 0;
+            padding-left: 30px;
+            list-style-type: square;
+          }
+        }
+      }
     }
 
     .right-column {
