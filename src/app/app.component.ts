@@ -29,9 +29,9 @@ export class AppComponent {
         "Visualforce",
         "JavaScript",
         "jQuery",
-        "HTML",
-        "CSS",
-        "Bootstrap CSS"
+        "HTML5",
+        "CSS3",
+        "Bootstrap"
       ]
     },
     {
