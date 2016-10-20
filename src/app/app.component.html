@@ -45,12 +45,12 @@
           <div class="work-accomplishments">
             <div class="work-accomplishments-header">{{project.role}} – {{project.client}} – {{project.duration}}</div>
             <div class="work-accomplishments-summary">{{project.summary}}</div>
-            <ul class="work-accomplishments-list">
-              <li *ngFor="let accomplishment of project.accomplishments">{{accomplishment}}</li>
-            </ul>
+            <div class="work-accomplishments-tech">
+              <div class="tech-label">Technologies Used:</div>
+              <div class="tech-list">{{createTechStringFromArray(project.tech)}}</div>
+            </div>
           </div>
         </div>
-
       </div>
     </div>
     <div class="right-column">
