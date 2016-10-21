@@ -54,7 +54,46 @@
       </div>
     </div>
     <div class="right-column">
-      Resume right column
+      <div class="section skills padded-bottom">
+        <div class="section-header">Skills & Competencies</div>
+        <div class="skills-graph-container">
+          <div class="skills-graph-guide">
+            <div class="empty-guide-column"></div>
+            <div class="guide-bar">
+              <div class="guide-bar-quarter"></div>
+              <div class="guide-bar-quarter"></div>
+              <div class="guide-bar-quarter"></div>
+              <div class="guide-bar-quarter"></div>
+            </div>
+          </div>
+          <div class="skills-graph">
+            <div class="skill-table" *ngFor="let skill of skills">
+              <div class="skill-text-column">
+                {{skill.name}}
+              </div>
+              <div class="graph-column">
+                <div class="graph-bar">
+                  <div class="graph-fill" [style.width.%]="skill.rating"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="section interests padded-bottom">
+        <div class="section-header">Interests</div>
+        <div class="interests-list">{{createInterestStringFromArray(interests)}}</div>
+      </div>
+      <div class="section education">
+        <div class="section-header">Education</div>
+        <div class="dates">{{education.date}}</div>
+        <div class="degree">{{education.degree}}</div>
+        <div class="school">{{education.school}}</div>
+        <div class="major"><span>Major:</span>&nbsp;&nbsp;{{education.major}}</div>
+        <div class="specialization"><span>Specialization:</span>&nbsp;&nbsp;{{education.specialization}}</div>
+      </div>
     </div>
   </div>
 </div>

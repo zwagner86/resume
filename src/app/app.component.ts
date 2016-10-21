@@ -14,6 +14,14 @@ export class AppComponent {
     return techString.slice(0, techString.length - 2);
   }
 
+  createInterestStringFromArray(array) {
+    let interestString = "";
+    for ( let interestItem of array ) {
+      interestString += interestItem + "  |  ";
+    }
+    return interestString.slice(0, interestString.length - 5);
+  }
+
   slalomProjects = [
     {
       role: "Front-End JavaScript Developer",
@@ -36,7 +44,7 @@ export class AppComponent {
     },
     {
       role: "Full Stack Developer",
-      client: "Internal Amazon Echo/Alexa Hackathon Project",
+      client: "Amazon Echo/Alexa Hackathon",
       duration: "2 months",
       summary: "Single-handedly created a new front-end application to be professional, visually appealing, and easy to use. Designed and implemented a new, responsive UI based on research into similar web applications. Achieved 100% front-end unit test coverage using Karma/Jasmine. Created RESTful endpoints using Java/Spring Boot to be used by both the Alexa skill and web application.",
       accomplishments: [
@@ -169,4 +177,60 @@ export class AppComponent {
       ]
     },
   ];
+
+  education = {
+    date: "2012",
+    degree: "Bachelor of Science",
+    school: "Illinois Institute of Technology",
+    major: "Information Technology and Web Design",
+    specialization: "Web Design and Application Development"
+  };
+
+  interests = [
+    "Web Development",
+    "Hybrid Mobile Applications",
+    "Athletics",
+    "Fitness",
+    "Health",
+    "Reading"
+  ];
+
+  skills = [
+    {
+      name: "Development Skills/Techniques",
+      rating: 95
+    },
+    {
+      name: "Pride in Quality and Productivity",
+      rating: 90
+    },
+    {
+      name: "Design Style",
+      rating: 95
+    },
+    {
+      name: "Methodical Problem Solving",
+      rating: 100
+    },
+    {
+      name: "Creativity",
+      rating: 100
+    },
+    {
+      name: "Goal Oriented",
+      rating: 97
+    },
+    {
+      name: "Leverages/Reuses Code",
+      rating: 95
+    },
+    {
+      name: "Communication",
+      rating: 90
+    },
+    {
+      name: "Sense of Fun",
+      rating: 100
+    },
+  ]
 }
