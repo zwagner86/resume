@@ -202,7 +202,7 @@ export class AppComponent {
     },
     {
       name: "Pride in Quality and Productivity",
-      rating: 90
+      rating: 94
     },
     {
       name: "Design Style",
@@ -226,7 +226,7 @@ export class AppComponent {
     },
     {
       name: "Communication",
-      rating: 90
+      rating: 92
     },
     {
       name: "Sense of Fun",
