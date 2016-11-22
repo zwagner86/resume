@@ -226,7 +226,7 @@ export class AppComponent {
     },
     {
       name: "Communication",
-      rating: 92
+      rating: 93
     },
     {
       name: "Sense of Fun",
